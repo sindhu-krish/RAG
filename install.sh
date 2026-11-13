@@ -1,12 +1,12 @@
 #!/bin/sh
 # GraphRAG one-line installer for macOS / Linux.
-#   curl -LsSf https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.sh | sh
+#   curl -LsSf https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.sh | sh
 # Options (env vars):
 #   GRAPHRAG_HOME=install folder (default ~/RAG)   GRAPHRAG_CLIENTS=all|none|codex,cursor (default all)
-#   GRAPHRAG_REPO=git URL or local path (default https://github.com/meghashyam0711/RAG)
+#   GRAPHRAG_REPO=git URL or local path (default https://github.com/sindhu-krish/RAG)
 set -eu
 
-REPO="${GRAPHRAG_REPO:-https://github.com/meghashyam0711/RAG}"
+REPO="${GRAPHRAG_REPO:-https://github.com/sindhu-krish/RAG}"
 DIR="${GRAPHRAG_HOME:-$HOME/RAG}"
 CLIENTS="${GRAPHRAG_CLIENTS:-all}"
 step() { printf '\033[36m==> %s\033[0m\n' "$1"; }

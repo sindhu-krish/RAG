@@ -1,12 +1,12 @@
 # GraphRAG one-line installer for Windows (PowerShell 5.1+ and 7+).
-#   irm https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.ps1 | iex
 # Options (set before running):
 #   $env:GRAPHRAG_HOME    = install folder            (default: $HOME\RAG)
 #   $env:GRAPHRAG_CLIENTS = all | none | codex,cursor (default: all detected agents/IDEs)
-#   $env:GRAPHRAG_REPO    = git URL or local path     (default: https://github.com/meghashyam0711/RAG)
+#   $env:GRAPHRAG_REPO    = git URL or local path     (default: https://github.com/sindhu-krish/RAG)
 
 $ErrorActionPreference = "Stop"
-$Repo = if ($env:GRAPHRAG_REPO) { $env:GRAPHRAG_REPO } else { "https://github.com/meghashyam0711/RAG" }
+$Repo = if ($env:GRAPHRAG_REPO) { $env:GRAPHRAG_REPO } else { "https://github.com/sindhu-krish/RAG" }
 $Dir = if ($env:GRAPHRAG_HOME) { $env:GRAPHRAG_HOME } else { Join-Path $HOME "RAG" }
 $Clients = if ($env:GRAPHRAG_CLIENTS) { $env:GRAPHRAG_CLIENTS } else { "all" }
 

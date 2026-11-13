@@ -21,13 +21,13 @@ Coding agents handle source code well but struggle with long reference documents
 **Windows** (PowerShell):
 
 ```powershell
-irm https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.ps1 | iex
 ```
 
 **macOS / Linux:**
 
 ```bash
-curl -LsSf https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.sh | sh
+curl -LsSf https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.sh | sh
 ```
 
 The script does the whole setup in one go:
@@ -42,14 +42,14 @@ Running it again updates an existing install. Afterwards, **restart your agent/I
 Options (set before running): `GRAPHRAG_CLIENTS=codex,cursor` (or `none`) and `GRAPHRAG_HOME=<folder>`.
 In PowerShell, use `$env:GRAPHRAG_CLIENTS="codex"`.
 
-**Using an agent?** Just tell it *"install https://github.com/meghashyam0711/RAG"*. The repo's `AGENTS.md` (and `CLAUDE.md` / `GEMINI.md`) gives Codex, Claude Code, Cursor, Copilot and Antigravity the exact steps.
+**Using an agent?** Just tell it *"install https://github.com/sindhu-krish/RAG"*. The repo's `AGENTS.md` (and `CLAUDE.md` / `GEMINI.md`) gives Codex, Claude Code, Cursor, Copilot and Antigravity the exact steps.
 
 ### Manual install
 
 Run one command per line (Windows PowerShell 5.1 does not accept `&&`):
 
 ```
-git clone https://github.com/meghashyam0711/RAG.git
+git clone https://github.com/sindhu-krish/RAG.git
 cd RAG
 uv sync
 uv run graphrag doctor

@@ -6,8 +6,8 @@ This repo is an MCP server and CLI for verified, cited answers from large docume
 
 Run exactly one of these. Each installs uv if needed, gets the code, installs dependencies, runs a self-test and registers the MCP server with every detected agent/IDE:
 
-- Windows (PowerShell): `irm https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.ps1 | iex`
-- macOS / Linux: `curl -LsSf https://raw.githubusercontent.com/meghashyam0711/RAG/main/install.sh | sh`
+- Windows (PowerShell): `irm https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.ps1 | iex`
+- macOS / Linux: `curl -LsSf https://raw.githubusercontent.com/sindhu-krish/RAG/main/install.sh | sh`
 
 To register only yourself, set `GRAPHRAG_CLIENTS` first (`codex`, `cursor`, `vscode`, `antigravity`, `claude-code`, `windsurf`, `claude-desktop`), for example in PowerShell: `$env:GRAPHRAG_CLIENTS="codex"`.
 
